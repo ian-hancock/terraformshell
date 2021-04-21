@@ -2,11 +2,14 @@
 
 terraform {
   required_version = "~>0.12"
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 2"
     }
-} 
+
+  }
+}
 
 #Gets the region from the calling provider and outputs it
 
