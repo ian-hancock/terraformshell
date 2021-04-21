@@ -1,12 +1,6 @@
-# Makes sure that we are using a pinned version of the provider
+# All bets are off on this one
 
-terraform {
-  required_version = "~>0.12"
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 2"
-    }
-} 
+terraform {} 
 
 #Gets the region from the calling provider and outputs it
 
